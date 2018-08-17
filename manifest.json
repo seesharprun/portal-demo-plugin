@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "Modify Azure Portal ",
+    "version": "2.0.0",
+    "description": "Make Azure Portal 'friendly' for conference talks and demos",
+    "icons": {
+        "16": "images/icon16.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+    },
+    "content_scripts": [
+        {
+            "css": [
+                "override.css"
+            ],
+            "matches": [
+                "https://preview.portal.azure.com/*",
+                "https://portal.azure.com/*",
+                "https://shell.azure.com/*"
+            ]
+        }
+    ]
+}
